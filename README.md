@@ -6,9 +6,9 @@ for use in Glamorous Toolkit.
 
 ## Quick start
 
-```
+```python
 import gtoolkit_tiktokenize as gt_tokenize
-gt_tokenize.tokenize('Hello World!')
+gt_tokenize.tokenize('Hello World!', 'gpt-4')
 ```
 
 # Info
