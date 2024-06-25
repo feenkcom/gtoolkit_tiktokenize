@@ -7,7 +7,7 @@ from gtoolkit_bridge import gtView
 @dataclass
 class Token:
     name: str
-    num: int
+    number: int
     start: int
     end: int
 
@@ -23,7 +23,7 @@ class TokenizerResult:
         clist.priority(2)
         clist.items(lambda: self.tokens)
         clist.column("Name", lambda each: each.name)
-        clist.column("Byte", lambda each: each.num)
+        clist.column("Byte", lambda each: each.number)
         clist.column("Start", lambda each: each.start)
         clist.column("End", lambda each: each.end)
         return clist
