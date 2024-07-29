@@ -16,6 +16,9 @@ class TokenizerResult:
     def __init__(self, tokens):
         self.tokens = tokens
 
+    def token_size(self):
+        return len(tokens)
+
     @gtView
     def gtViewTokens(self, view):
         clist = view.columnedList()
