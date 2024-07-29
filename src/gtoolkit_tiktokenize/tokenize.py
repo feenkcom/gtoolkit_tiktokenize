@@ -17,7 +17,7 @@ class TokenizerResult:
         self.tokens = tokens
 
     def token_size(self):
-        return len(tokens)
+        return len(self.tokens)
 
     @gtView
     def gtViewTokens(self, view):
