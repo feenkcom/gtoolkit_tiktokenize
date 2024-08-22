@@ -31,6 +31,9 @@ class TokenizerResult:
         clist.column("End", lambda each: each.end)
         return clist
 
+    def as_bytes(self):
+        return [t.number for t in self.tokens]
+
 
 def tokenize(string, model):
     encoding = tiktoken.encoding_for_model(model)
