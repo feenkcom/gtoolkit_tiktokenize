@@ -56,7 +56,7 @@ def tokenize(string, model):
         try:
             decoded = str(encoding.decode_single_token_bytes(b), encoding="utf-8")
         except UnicodeDecodeError:
-            decoded = encoding.decode_single_token_bytes
+            decoded = encoding.decode_single_token_bytes(b)
         end_range = start_range + len(decoded)
         tokens.append(Token(decoded, b, start_range + 1, end_range))
         start_range = end_range
